@@ -1,0 +1,718 @@
+@import 'partials/_fonts';
+@import 'partials/_wp-style-guide';
+@import 'partials/_variables';
+@import 'partials/_icons';
+@import 'partials/_base';
+@import 'partials/_mixins';
+@import 'partials/_hamburger';
+
+
+#header  {
+	padding: 20px 10px;
+	.logo {
+
+	}
+
+	.conf-info {
+		h3 {
+			color: $wp-mainred;
+			font-size: 1.4em;
+		}
+		h5 {
+			font-size: 1.1em;
+			color: $body-text;
+		}
+	}
+}
+
+#mobile-nav {
+	margin: 0;
+	padding: 0;
+
+	a { text-decoration: none;}
+}
+
+#welcome { 
+	background:url('../images/main-bg.jpg') no-repeat scroll center center / cover;
+	position: relative;
+	
+	.welcome-message { 
+		background:#000;
+		opacity: 0.8;
+		color: $white;
+		div {
+			width:100%;
+			margin:0 auto;
+		}
+		h5 { 
+			padding:15px 50px;
+			text-align:left;
+			font-size:$h4;
+			line-height: $line-height-main-heading;
+			font-style: $wp-font-style;
+			font-weight:$weight-font2;
+			span {
+				background: $white;
+				color: $wp-mainred;
+				font-size: $h3;
+				border-radius: 20px;
+				padding: 4px 6px;
+				margin-right: 2px;
+				font-weight: bold;
+			}
+		}
+
+		p { 
+			padding:15px 50px;
+			text-align:left;
+			line-height: $line-height-main-text;
+		}
+
+		ul {
+			padding-left: 70px;
+			width: 92%;
+		}
+
+		li {
+			text-align: left ;
+		}
+
+	}
+
+	.line-split {
+		height:2px;
+		border-top:1px solid #fff;
+		width: 95%;
+	}
+
+}
+
+#questions {
+	background:$white;
+	padding:20px 10px;
+	text-align: left;
+	img {
+			display:block;
+			margin:auto;
+			border:1px solid $wp-mainred;
+		}
+
+	.ques-img { 
+			margin: 0 auto;
+			width:95%;
+			margin-bottom: 10px;
+			
+		}
+
+		.page-title {
+			padding: 8px 0;
+			font-size: $h3;
+			span {
+				background: $sko-1;
+				color: $white;
+				font-size: $h3;
+				letter-spacing: 2px;
+				border-radius: 20px;
+				padding: 4px 8px;
+				margin-right: 1px;
+				font-weight: bold;
+			}
+		}
+}
+
+
+#main-body {
+		min-height: 350px;
+		height: auto;
+		text-align:left;
+		background: #fff;
+		padding-bottom: 25px; 
+		h3 {
+			padding:15px 25px;
+			text-align:left;
+			margin-top: 15px;
+			font-size:$h4;
+			line-height: $line-height-main-heading;
+			font-style: $wp-font-style;
+			font-weight:$weight-font2;
+			span {
+				background: $wp-mainred;
+				color: $white;
+				font-size: $h3;
+				border-radius: 20px;
+				padding: 4px 10px;
+				margin-right: 1px;
+				font-weight: bold;
+			}
+		}
+
+		.page-heading {
+		font-size:$h2;
+		h4 {
+			color: $wp-mainred;
+		}
+		.sub-heading { 
+			color: #69197d;
+		}
+	}
+
+.sub-heading {
+	font-weight: $weight-font3;
+	font-size: $h4;
+	color: $worldpay-red;
+
+}
+
+.teritiary-heading {
+	color: #69197d;
+	font-weight: $weight-font3;
+	font-size: $h4;
+	padding: 10px 0 !important;
+
+}
+
+p { 
+	font-size: 16px;
+	line-height: 1.3em;
+	 padding: 0px 15px 0 10px;
+		}
+
+em {
+	font-weight: $weight-font3;
+	font-style: normal;
+}
+
+}
+
+
+.event-box {
+				margin-top:10px;
+				img {
+		 		border:1px solid $wp-mainred;
+				}
+
+				.event-img {
+					padding-left: 0;
+				}
+
+				li {
+		 		list-style: none;
+		 		strong { 
+		 			color: #69197d;
+				}
+		  	  }
+
+		  	  h5 { 
+			text-align:left;
+			margin-top: 15px;
+			font-size:$h4;
+			line-height: $line-height-main-heading;
+			font-style: $wp-font-style;
+			font-weight:$weight-font2;
+			span {
+				background: $wp-mainred;
+				color: $white;
+				font-size: $h3;
+				border-radius: 20px;
+				padding: 4px 8px;
+				margin-right: 1px;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.accordian-wrap {
+		.faq {
+			padding:0 3px;
+
+			.faq-heading {
+				font-style: normal;
+				font-weight: $weight-font3;
+				padding: 4px 0;
+				font-size: 16px;
+
+				a {
+					color: #000;
+					text-decoration: none;
+					font-weight: $weight-font3;
+				}
+
+				a:hover, a:active, a:focus {
+					text-decoration: underline;
+					}
+				}
+
+				p {
+					padding:2px 15px;
+				}
+			}
+
+		}
+
+		.faq-heading .accordion-toggle:after {
+    		/* symbol for "opening" panels */
+    		font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    		content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    		float: left;        /* adjust as needed */
+    		color: black;         /* adjust as needed */
+    		padding: 0px 5px 0 0;
+		}
+
+		.faq-heading .accordion-toggle.collapsed:after {
+		    /* symbol for "collapsed" panels */
+		    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+		}
+
+#footer {
+		background:#ccc;
+		padding: 20px 0;
+
+		.mobile-footer {
+			text-align: left;
+			font-size: 12px;
+			ul {
+				padding-top: 15px;
+			}
+			li {
+				display: block;
+				padding: 0 2px;
+				font-weight: $weight-font1;
+				text-align:center;
+			}
+		}
+
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) { 
+
+	#header {
+		height: 245px;
+		padding: 50px 0;
+		background: url('../images/header-bg.jpg') no-repeat top;
+		background-size: cover;
+
+		.logo {
+			text-align: left;
+			position: relative;
+			top: 15px;
+		}
+
+		.conf-info {
+			position: relative;
+			top: 70px;
+			h3 {
+				font-size: 1.4em;
+				text-indent: 1px;
+				font-weight: $weight-font2;
+			}
+			h5 {
+				font-size: 1em;
+				font-weight: $weight-font2;
+			}		
+		}
+	}
+
+	#nav-bar {
+		background: #69197d;
+		.main-nav {
+			float: right;
+			li {
+				color: $white;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 2px 3px;
+				font-size: 1em;
+				font-weight: $weight-font2;
+				vertical-align: top;
+
+			}
+
+			.nav-pipe {
+					margin-top: 8px;
+				}
+
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	// Navigation active State
+	#active-welcome {
+		.fa-caret-up {
+			position: absolute !important;
+			bottom: -8px;
+			left: 47px;
+		}
+	}
+
+	#active-event {
+		.fa-caret-up {
+			position: absolute !important;
+			bottom: -10px;
+			left: 45px;
+		}
+	}
+
+	#active-destination {
+		.fa-caret-up {
+			position: absolute !important;
+			bottom: -8px;
+			left: 72px;
+		}
+	}
+
+	#active-travel {
+		.fa-caret-up {
+			position: absolute !important;
+			bottom: -8px;
+			left: 72px;
+		}
+	}
+
+	#active-register {
+		.fa-caret-up {
+			position: absolute !important;
+			bottom: -8px;
+			left: 41px;
+		}
+	}
+
+
+
+
+	#welcome {
+
+		.welcome-message { 
+			color: $white;
+			div {
+			width:95%;
+			margin:0 auto;
+		}
+		h5 { 
+			padding:15px 50px;
+			text-align:left;
+			margin-top: 15px;
+			font-size:$h4;
+			line-height: $line-height-main-heading;
+			font-style: $wp-font-style;
+			font-weight:$weight-font2;
+			span {
+				background: $white;
+				color: $wp-mainred;
+				font-size: $h3;
+				border-radius: 20px;
+				padding: 4px 6px;
+				margin-right: 1px;
+				font-weight: bold;
+			}
+		}
+
+		p { 
+			padding:15px 50px;
+			text-align:left;
+			line-height: $line-height-main-text;
+		}
+
+
+
+		.line-split {
+			margin-left: 25px;
+		}
+	
+	}
+
+	#questions { 
+		background:$white;
+		height:510px;
+		padding-top: 45px;
+		
+		img {
+			display:block;
+			margin:auto;
+			border:1px solid $wp-mainred;
+		}
+
+		.ques-img { 
+			margin: 0 auto;
+			position: relative;
+			right: 75px;
+			margin-bottom: 10px;
+			max-width: 445px;
+
+		}
+		
+
+		p { 
+			font-size: 16px;
+			line-height: $line-height;
+			padding: 10px 15px 0 15px;
+			margin-left: 34px;
+
+			strong {
+				font-size: 17px;
+			}
+
+		}
+
+	}
+
+	}
+
+
+	#main-body {
+		min-height: 350px;
+		height: auto;
+		h3 {
+			padding:15px 25px;
+			text-align:left;
+			margin-top: 15px;
+			font-size:$h4;
+			line-height: $line-height-main-heading;
+			font-style: $wp-font-style;
+			font-weight:$weight-font2;
+			span {
+				background: $wp-mainred;
+				color: $white;
+				font-size: $h3;
+				border-radius: 20px;
+				padding: 4px 10px;
+				margin-right: 1px;
+				font-weight: bold;
+			}
+		}
+
+
+		.destination-bg  {
+				background:url('../images/Destination-info.jpg') no-repeat scroll center center / cover;
+				position: relative;
+				height:612px;
+				max-height: 612px;
+				border:1px solid red;
+				width:100%;
+				margin-top:50px;
+			}
+
+			.travel-bg  {
+				background:url('../images/Travel-Info.jpg') no-repeat scroll center center / cover;
+				position: relative;
+				height:612px;
+				max-height: 612px;
+				border:1px solid red;
+			 	width:100%;
+				margin-top:50px;
+			}
+
+			.register-bg  {
+				background:url('../images/Register.jpg') no-repeat scroll center center / cover;
+				position: relative;
+				height:612px;
+				max-height: 612px;
+				border:1px solid red;
+			 	width:100%;
+				margin-top:50px;
+			}
+
+		.internal-content { 
+			width:90%;
+			margin:0 auto;
+
+			p {
+				// padding:15px 50px;
+				text-align:left;
+				line-height: $line-height-main-text;
+				padding-bottom: 25px;
+
+			}
+
+			.sub-heading {
+				padding:0 10px;
+
+					}
+
+			.teritiary-heading {
+				padding:0 10px;
+				font-weight: $weight-font3;
+
+						}
+
+			.event-box {
+				margin-top:10px;
+				img {
+		 		border:1px solid $wp-mainred;
+				}
+
+				.event-img {
+					padding-left: 0;
+				}
+
+				li {
+		 		list-style: none;
+		 		strong { 
+		 			color: #69197d;
+				}
+		  	  }
+			}
+
+		}
+
+		h5 { 
+			text-align:left;
+			margin-top: 15px;
+			font-size:$h4;
+			line-height: $line-height-main-heading;
+			font-style: $wp-font-style;
+			font-weight:$weight-font2;
+			span {
+				background: $wp-mainred;
+				color: $white;
+				font-size: $h3;
+				border-radius: 20px;
+				padding: 4px 8px;
+				margin-right: 1px;
+				font-weight: bold;
+			}
+		}
+
+
+	}
+
+
+	#footer {
+		background:#ccc;
+		padding: 20px 0;
+
+		.copy-footer {
+			text-align: left;
+			font-size: 12px;
+			ul {
+				padding-top: 15px;
+			}
+			li {
+				display: inline-block;
+				padding: 0 5px;
+				font-weight: $weight-font1;
+			}
+		}
+
+		.foot-logo {
+			text-align: right;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	#header {
+		.conf-info {
+			
+			h3 {
+				font-size: 1.8em;
+				text-indent: 1px;
+				font-weight: $weight-font2;
+			}
+			h5 {
+				font-size: 1.2em;
+				font-weight: $weight-font2;
+			}		
+		}
+
+	}
+
+
+	#welcome { 
+		// height: 479px;
+		.welcome-message { 
+			color: $white;
+			div {
+			width:85%;
+			margin:0 auto;
+		}
+		h5 { 
+			padding:15px 50px;
+			text-align:left;
+			font-size:$h3;
+			line-height: $line-height-main-heading;
+			font-style: $wp-font-style;
+			font-weight:$weight-font2;
+			
+		}
+
+		p { 
+			padding:15px 50px;
+			text-align:left;
+			line-height: $line-height-main-text;
+		}
+
+		.line-split {
+			width:85%;
+			margin-left: 38px;
+		}
+
+
+	}
+}
+
+#questions {
+	.ques-img { 
+			margin: 0 auto;
+			width:95%;
+			margin-bottom: 10px;
+			max-width: 445px;
+			position: relative;
+			right: 20px;
+		}
+}
+
+
+
+}
+
+@media (min-width: 1200px) {
+
+
+	#welcome {
+		
+		.welcome-message {
+			h5 { 
+			font-size:1.5em;
+			line-height: 1.5em;
+			
+		}
+
+		p { 
+			padding:15px 50px;
+			text-align:left;
+			line-height: $line-height-main-text;
+			font-size: 18px;
+		}
+
+		}
+	}
+
+	#questions {
+		.ques-img { 
+				margin: 0 auto;
+				width:95%;
+				margin-bottom: 10px;
+				max-width: 445px;
+				position: relative;
+				right: 105px;
+				
+			}
+	}
+	
+}

@@ -1,0 +1,85 @@
+/*****************************
+CUSTOM MOBILE ONLY HAMBURGER 
+*******************************/
+.navbar-toggle .icon-bar {
+  position: relative;
+  transition: all 500ms ease-in-out;
+  background: #fff !important;
+}
+
+.navbar-toggle .icon-bar:nth-child(2) {
+  top: 0px;
+}
+
+.navbar-toggle .icon-bar:nth-child(3) {
+  top: 0px;
+}
+
+.navbar-toggle .icon-bar:nth-child(4) {
+  top: 0px;
+}
+
+.navbar-toggle.active .icon-bar:nth-child(2) {
+  top: 6px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-child(3) {
+  top: 0px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-child(4) {
+  display: none;
+}
+
+
+
+/*******************************
+Bootstrap Mobile Toggle Overwrite
+*******************************/
+.navbar-default {
+  background: #69197d;
+  border-bottom: 1px solid $white !important;
+  border-top: 1px solid $white !important;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: #69197d;
+}
+
+.navbar-default .navbar-collapse {
+  background: #fff;
+  border-color: #a8a8a8 !important;
+}
+
+.navbar-default .navbar-collapse .nav li {
+  border-bottom: 1px solid $white;
+  background: #69197d;
+  vertical-align: middle;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-default .navbar-collapse .nav a {
+  color: $white !important;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-collapse .nav a:hover {
+  color: #a8a8a8 !important;
+}
+
+.navbar-default .navbar-collapse .navbar-nav {
+  margin: 0 -15px 7.5px -15px;
+}
+

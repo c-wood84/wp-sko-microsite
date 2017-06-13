@@ -1,0 +1,60 @@
+// ***********************************
+// BASE
+// ***********************************
+
+body{
+	background: #ccc;
+	color: $black;
+	margin: 0;
+	padding: 0;
+	font-family: $font;
+	font-weight: $wp-font-weight-body;
+	font-style: $wp-font-style;
+	line-height: $line-height-main-text;
+	position: relative;
+	text-align: center;
+}
+
+img { 
+	max-width: 100%;
+	height: auto;
+	  }
+
+// ***********************************
+// LINKS
+// ***********************************
+
+a, a:visited {
+	text-decoration:$link-decoration;
+	color:$link_color;
+	transition:(.5s);
+}
+a:hover, a:active, a:focus {
+	color:$link_hover;
+	transition:(.5s);
+}
+
+
+// ***********************************
+// GENERAL BOOTSTRAP OVERIDE STYLES
+// ***********************************
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: transparent;
+}
+
+.nav > li > a {
+  padding: 10px 15px;
+}
+
+
+// ***********************************
+// PAGE STRUCTURE
+// ***********************************
+
+
+
+
+// content
+
